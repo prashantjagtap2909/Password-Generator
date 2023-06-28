@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator App</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="shortcut icon" href="password.ico" type="image/x-icon">
+    
+ 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="main">
+            <div class="header">
+                <h1>Password Generator App</h1>
+            </div>
+            <section class="output">
+                <h2 id="passWord">Cre@t3A$tr0nGPa$$v^vorD</h2>
+                <button class="copy enabled" aria-label="Copy the password"></button>
+            </section>
+            <section class="input">
+                <div class="length">
+                    <p>Character Length</p>
+                    <p id="charLength" class="charLength">11</p>
+                </div>
+                <div class="range">
+                    <input type="range" name="range" id="range" min="0" max="22" value="11">
+                </div>
+                <div class="checkBox">
+                    <label class="lbl" for="upperCase"><input type="checkbox" name="uppercase" id="upperCase" class="selc">Include Upper Case Letters</label>
+                    <label for="lowerCase"><input type="checkbox" name="lowercase" id="lowerCase" class="selc">Include Lower Case Letters</label>
+                    <label for="numbers"><input type="checkbox" name="numbers" id="numbers" class="selc">Include Numbers</label>
+                    <label for="symbols"><input type="checkbox" name="symbols" id="symbols" class="selc">Include Symbols</label>
+                </div>
+                <div class="strAndGen">
+                    <div class="strength">
+                        <h3>Strength</h3>
+                        <div>
+                            <span class="strengthSpan"></span>
+                            <span class="strengthSpan"></span>
+                            <span class="strengthSpan"></span>
+                            <span class="strengthSpan"></span>
+                        </div>
+                    </div>
+                    <div class="generate">
+                        <button class="generateBtn" aria-label="Generate a new password">Generate</button>
+                    </div>
+                </div>
+            </section>
+            <div class="theme">
+                <span class="modeDark">Dark</span>
+                <label for="theme" class="switch">
+                    <input type="checkbox" name="toggle" id="theme" aria-label="Switch between light and dark mode">
+                    <span class="slider"></span>
+                </label>
+                <span class="modeLight">Light</span>
+            </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
