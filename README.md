@@ -16,3 +16,11 @@
 
 ![image](https://github.com/prashantjagtap2909/Password-Generator/assets/93985255/3b640eed-f8e3-42ee-b2ce-3c9392cf6c8f)
 
+## Authors
+
+- [Prashant](https://www.github.com/prashantjagtap2909)
+
+
+## Contributing
+
+Contributions are always welcome!
